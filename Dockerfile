@@ -2,8 +2,8 @@ FROM alpine:latest
 LABEL "name"="sh-checker"
 LABEL "maintainer"="Luiz Muller <contact@luizm.dev>"
 
-ARG shfmt_version=3.0.1
-ARG shellcheck_version=0.7.0
+ARG shfmt_version=3.1.2
+ARG shellcheck_version=0.7.1
 
 RUN apk add --no-cache bash jq curl \
     && apk add --no-cache --virtual .build-deps tar \
